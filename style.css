@@ -1857,12 +1857,18 @@ textarea {
 }
 #identity {
   position: absolute;
+  /* left: 50%;
+  top: 35%; */
   top: 49px;
-  left: 0;
+  left: 10;
   -webkit-transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
   transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  /* top: 49px;
+  left: 10; */
 }
 #identity > div {
+  /* left: 50%;
+  top: 50%; */
   height: 10px;
   width: 10px;
   margin-top: -5px;
@@ -1903,11 +1909,13 @@ textarea {
   top: 12px;
   left: 12px;
 }
-/* #identity.loading {
+
+/* Loading Circles in the middle */
+#identity.loading {
   position: absolute;
   top: 50%;
   left: 50%;
-} */
+}
 #identity.rest > div {
   top: 0;
   margin-left: 0;
