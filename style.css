@@ -1445,16 +1445,18 @@ h1,
 p,
 .p {
   margin: 0;
+  width: 20px;
 }
-p span, 
 .p span:first-of-type:hover{
     color: #53a2be;
+    
 }
 
-p span,
 .p span:last-of-type:hover{
     color: #d9594c;
+    
 }
+
 
 
 small,
@@ -2381,17 +2383,20 @@ textarea {
 
  /* ------------- Hover 'Hover' ------------*/
 
- div .rest:hover {
 
-    -webkit-animation: identityRobot 1.4s ease-in-out infinite;
-    animation: identityRobot 1.4s ease-in-out infinite;
- }
  
  /* Causes the dots to do a 360 degree spin */
  #identity {
    border-radius: 50%;
    -webkit-transition: -webkit-transform .8s ease-in-out;
            transition:         transform .8s ease-in-out;
+ }
+ 
+ /* Normal Hover */
+ div .rest:hover {
+
+    -webkit-animation: identityRobot 1.4s ease-in-out infinite;
+    animation: identityRobot 1.4s ease-in-out infinite;
  }
  
  #identity:active{
