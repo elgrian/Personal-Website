@@ -1446,6 +1446,17 @@ p,
 .p {
   margin: 0;
 }
+p span, 
+.p span:first-of-type:hover{
+    color: #53a2be;
+}
+
+p span,
+.p span:last-of-type:hover{
+    color: #d9594c;
+}
+
+
 small,
 .small {
   font-size: 12px;
@@ -2366,6 +2377,34 @@ textarea {
     left: 12px;
   }
 }
+
+
+ /* ------------- Hover 'Hover' ------------*/
+
+ div .rest:hover {
+
+    -webkit-animation: identityRobot 1.4s ease-in-out infinite;
+    animation: identityRobot 1.4s ease-in-out infinite;
+ }
+ 
+ /* Causes the dots to do a 360 degree spin */
+ #identity {
+   border-radius: 50%;
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+           transition:         transform .8s ease-in-out;
+ }
+ 
+ #identity:active{
+     
+     -webkit-transform: rotate(360deg);
+             transform: rotate(360deg);
+ }
+ 
+
+ /*----------Hover 'Hover' END ------------ */
+
+
+
 #signature {
   position: absolute;
   top: 35px;
@@ -2377,7 +2416,9 @@ textarea {
   background-size: 225px;
   padding-right: 8em;
   padding-left: 8em;
+  
 }
+
 #signature:not(.loading) {
   -webkit-animation: signatureAnimation 1.3s steps(2) forwards;
   animation: signatureAnimation 1.3s steps(2) forwards;
@@ -6757,3 +6798,4 @@ form .small .status > *:nth-child(2),
 .notFound #yahia {
   filter: grayscale(1);
 }
+
