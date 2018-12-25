@@ -1437,11 +1437,25 @@ h1,
   margin: 0;
   margin-bottom: 28px;
   font-family: 'Roboto Slab', serif;
-  font-size: 48px;
   font-weight: 700;
   line-height: 63px;
   color: #fff;
 }
+
+@media only screen and (min-width: 601px) {
+    h1{
+        /*font-size: 1.4em;*/
+        font-size: 3.1vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 4vw;
+    }
+}
+
+
 p,
 .p {
   margin: 0;
@@ -2620,7 +2634,7 @@ form .small .status > *:nth-child(2),
   .template main .h1 > * {
     height: 37.8px;
     line-height: 37.8px;
-    font-size: 28.799999999999997px;
+    /*font-size: 3.1vw;*/
   }
 }
 .template main .p,
